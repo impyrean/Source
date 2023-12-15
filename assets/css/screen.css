@@ -1904,7 +1904,7 @@ Search                         LOGO                    Login Subscribe
 /* 11.2. Without sidebar */
 
 .gh-container:not(.has-sidebar) :is(.gh-container-title, .gh-main, .gh-more) {
-  grid-column: 3 / span 12;
+  grid-column: 5 / span 8;
 }
 
 .gh-container.is-list.no-image:not(.has-sidebar)
