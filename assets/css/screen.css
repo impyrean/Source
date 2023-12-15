@@ -1032,8 +1032,8 @@ Search                         LOGO                    Login Subscribe
   margin-top: 12px;
 }
 
-.gh-card-author + .gh-card-date::before {
-  content: "—";
+.gh-card-date + .gh-card-author::before {
+  content: "•";
   margin-right: 4px;
 }
 

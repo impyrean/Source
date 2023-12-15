@@ -24,14 +24,14 @@
             {{#if excerpt}}
                 <p class="gh-card-excerpt is-body">{{excerpt}}</p>
             {{/if}}
-            <footer class="gh-card-meta"><!--
-             -->{{#if @custom.show_author}}
-                    <span class="gh-card-author">By {{#foreach authors}}{{#if @first}}{{name}}{{else}}, {{name}}{{/if}}{{/foreach}}</span>
-                {{/if}}
+            <footer class="gh-card-meta">
                 {{#if @custom.show_publish_date}}
-                    <time class="gh-card-date" datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
-                {{/if}}<!--
-         --></footer>
+                    <time class="gh-card-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMM D"}}</time>
+                {{/if}}
+                {{#if @custom.show_author}}
+                    <span class="gh-card-author">{{#foreach authors}}{{#if @first}}{{name}}{{else}}, {{name}}{{/if}}{{/foreach}}</span>
+                {{/if}}
+            </footer>
         </div>
     </a>
 </article>
