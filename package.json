@@ -136,10 +136,11 @@
           "Landing",
           "Highlight",
           "Magazine",
+          "Pleasing",
           "Search",
           "Off"
         ],
-        "description": "Landing is recommended for all sites, Highlight & Magazine for those with more content",
+        "description": "Landing is recommended for all sites; Highlight, Magazine & Pleasing for those with more content",
         "default": "Landing",
         "group": "homepage"
       },
@@ -160,7 +161,7 @@
         "type": "boolean",
         "default": false,
         "group": "homepage",
-        "visibility": "header_style:[Highlight, Magazine]"
+        "visibility": "header_style:[Highlight, Magazine, Pleasing]"
       },
       "post_feed_style": {
         "type": "select",

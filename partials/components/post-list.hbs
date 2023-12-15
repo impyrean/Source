@@ -46,6 +46,14 @@
                                 {{/foreach}}
                             {{/get}}
                         {{/match}}
+                    {{else match @custom.header_style "Pleasing"}}
+                        {{#match posts.length ">=" 7}}
+                            {{#get "posts" include="authors" limit="19"}}
+                                {{#foreach posts from="8" limit="12"}}
+                                    {{> "post-card" lazyLoad=true}}
+                                {{/foreach}}
+                            {{/get}}
+                        {{/match}}
                     {{else}}
                         {{#get "posts" include="authors" limit="12"}}
                             {{#foreach posts}}
